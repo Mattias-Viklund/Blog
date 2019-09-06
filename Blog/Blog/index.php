@@ -34,7 +34,7 @@ $parser = new HTML_BBCodeParser2($options);
                 $parser->parse();
                 $parsed = $parser->getParsed();
 
-                echo '<p>' . $parsed . "</p>";
+                echo '<p>' . nl2br($parsed) . "</p>";
             }
         }
         ?>
