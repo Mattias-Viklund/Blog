@@ -1,2 +1,2 @@
-C:\Users\Mew_\Documents\GitHub\Blog\HTTL.exe C:\Users\Mew_\Documents\GitHub\Blog\Blog\Blog\ C:\Users\Mew_\Desktop\htdocs\ -c
-"C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe" 127.0.0.1/login.php
+C:\Users\elev\Desktop\Blog\HTTL.exe C:\Users\elev\Desktop\Blog\Blog\Blog\ C:\Users\elev\Desktop\Sites\Nav\htdocs\ -c
+"C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe" 127.0.0.1:8080/login.php

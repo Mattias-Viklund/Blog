@@ -16,8 +16,12 @@ require_once "session.php";
 <body>
     <p><?php echo htmlspecialchars($_SESSION["username"]); ?></p>
 
-    <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-    <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+    <a href="index.php">Index</a>
+    <a href="admin.php">Admin</a>
+    <a href="post.php">Post</a>
+    <a href="reset-password.php">Reset Your Password</a>
+    <a href="logout.php">Sign Out of Your Account</a>
+
 </body>
 
 </html>
