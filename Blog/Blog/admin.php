@@ -1,29 +1,26 @@
+#template("default.ttl")
+
+#start("Initialize")
 <?php
-session_start();
 require_once "session.php";
 
-$admin = false;
-
-if ($_SESSION["acctype"] == 0)
-    $admin = true;
-else {
-    echo "Pliz don't come in.";
-    exit(69);
+if (!is_admin()) {
+    header("location: Pages/notadmin.html");
 }
 ?>
+#end()
 
-<!DOCTYPE html>
-<html lang="en">
+#start("Head")
+<title>Admin Page</title>
+#end()
 
-<head>
-    <meta charset="UTF-8">
-    <title>Admin Page</title>
-</head>
+#start("Navbar")
+<a href="post.php">New Post</a>
+#end()
 
-<body>
-    <p>Yer an admin Harry.</p>
-    <a href="post.php">Create New Post</p>
-        <a href="post.php">Test</p>
-</body>
+#start("Body")
+<div class="container">
+    <h5>Welcome <?php echo $_SESSION["username"] ?>.</h5>
 
-</html>
+</div>
+#end()

@@ -1,5 +1,7 @@
+#template("default.ttl")
+
+#start("Initialize")
 <?php
-session_start();
 require_once "config.php";
 
 $err = $username = $password = "";
@@ -55,36 +57,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($link);
 }
 ?>
+#end()
 
-<!DOCTYPE html>
-<html lang="en">
+#start("Head")
+<title>Login</title>
+#end()
 
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <h2>Login</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div>
-                <p><?php echo $err; ?></p>
-            </div>
-            <div>
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-            </div>
-            <div>
-                <label>Password</label>
-                <input type="password" name="password" class="form-control">
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-            </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        </form>
-    </div>
-</body>
-
-</html>
+#start("Body")
+<div class="wrapper">
+    <h2>Login</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <div>
+            <p><?php echo $err; ?></p>
+        </div>
+        <div>
+            <label>Username</label>
+            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+        <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+    </form>
+</div>
+#end()

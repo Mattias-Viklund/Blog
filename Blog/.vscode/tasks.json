@@ -6,7 +6,7 @@
         {
             "label": "Build Web",
             "type": "shell",
-            "command": "C:\\Users\\elev\\Desktop\\Blog\\build.bat",
+            "command": "C:\\Users\\Mew_\\Documents\\GitHub\\Blog\\build2.bat",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

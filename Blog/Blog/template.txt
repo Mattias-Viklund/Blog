@@ -1,14 +1,13 @@
 #template("default.ttl")
 
-
 #start("Initialize")
-<?php
-require_once "session.php";
-?>
 #end()
 
 #start("Head")
-<title>Welcome</title>
+<title></title>
+#end()
+
+#start("Navbar")
 #end()
 
 #start("Body")

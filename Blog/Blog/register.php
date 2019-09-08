@@ -1,5 +1,7 @@
+#template("default.ttl")
+
+#start("Initialize")
 <?php
-session_start();
 require_once "config.php";
 
 $err = $username = $password = $confirm_password = "";
@@ -67,39 +69,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($link);
 }
 ?>
+#end()
 
-<!DOCTYPE html>
-<html lang="en">
+#start("Head")
+<title>Sign Up</title>
+#end()
 
-<head>
-    <meta charset="UTF-8">
-    <title>Sign Up</title>
-</head>
-
-<body>
-    <h2>Sign Up</h2>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <div>
-            <p><?php echo $err; ?></p>
-        </div>
-        <div>
-            <label>Username</label>
-            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-        </div>
-        <div>
-            <label>Password</label>
-            <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
-        </div>
-        <div>
-            <label>Confirm Password</label>
-            <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Submit">
-            <input type="reset" class="btn btn-default" value="Reset">
-        </div>
-        <p>Already have an account? <a href="login.php">Login here</a>.</p>
-    </form>
-</body>
-
-</html>
+#start("Body")
+<h2>Sign Up</h2>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <div>
+        <p><?php echo $err; ?></p>
+    </div>
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+    </div>
+    <div>
+        <label>Confirm Password</label>
+        <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="reset" class="btn btn-default" value="Reset">
+    </div>
+    <p>Already have an account? <a href="login.php">Login here</a>.</p>
+</form>
+#end()
