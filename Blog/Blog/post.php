@@ -26,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO `posts` (title, thumbnail, content, worktime, git_commit) VALUES (?, ?, ?, ?, ?)";
 
     $stmt = mysqli_prepare($link, $sql);
-    echo ($stmt) ? "yes" : "no";
 
     if ($stmt) {
 
