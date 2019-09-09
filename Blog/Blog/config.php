@@ -2,15 +2,15 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'blog');
- 
+define('DB_USERNAME', 'gcssffft_admin');
+define('DB_PASSWORD', 'Mattehunter12!');
+define('DB_DATABASE', 'gcssffft_blog');
+
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
- 
+
 // Check connection
 if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 ?>
