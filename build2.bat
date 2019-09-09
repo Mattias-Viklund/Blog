@@ -1,1 +1,1 @@
-C:\Users\Mew_\Documents\Github\Blog\HTTL.exe C:\Users\Mew_\Documents\GitHub\Blog\Blog\Blog\ C:\Users\Mew_\Desktop\htdocs\Blog\ -c
+C:\Users\Mew_\Documents\Github\Blog\HTTL.exe C:\Users\Mew_\Documents\GitHub\blog\blog\ C:\Users\Mew_\Documents\GitHub\Exedump\ -c

@@ -1,3 +1,3 @@
 <?php
-header("location: welcome.php");
+header("location: blog/index.php");
 ?>

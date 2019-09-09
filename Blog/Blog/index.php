@@ -27,7 +27,7 @@ $parser = new HTML_BBCodeParser2($options);
             echo '<h5>' . $article["date"] . (($article["worktime"] > 0) ? ", Worked for " . $article["worktime"] . " hours." : "") . '</h5>';
 
             if (!empty($article["thumbnail"]))
-                echo '<img src="' . $article["thumbnail"] . '" height="256" width="256" alt="Click to open full image."">';
+                echo '<img src="' . $article["thumbnail"] . '" width="256" alt="Click to open full image."">';
 
             $parser->setText($article['content']);
             $parser->parse();
