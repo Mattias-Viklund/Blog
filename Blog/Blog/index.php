@@ -50,6 +50,7 @@ $parser = new HTML_BBCodeParser2($options);
 
             }
             echo '</div>';
+            echo '<hr>';
         }
     }
     ?>
