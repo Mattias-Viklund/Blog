@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["username"] = $username;
                             $_SESSION["acctype"] = $acctype;
 
-                            header("location: welcome.php");
+                            header("location: index.php");
                         } else {
                             $err = "The password you entered was not valid.";
                         }

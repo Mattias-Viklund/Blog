@@ -7,6 +7,7 @@ require_once('HTML/BBCodeParser2.php');
 $config = parse_ini_file('BBCodeParser2.ini', true);
 $options = $config['HTML_BBCodeParser2'];
 $parser = new HTML_BBCodeParser2($options);
+
 ?>
 #end()
 
@@ -33,11 +34,21 @@ $parser = new HTML_BBCodeParser2($options);
             $parser->parse();
             $parsed = $parser->getParsed();
 
-            echo '<p>' . nl2br($parsed) . "</p>";
-            echo "<br>";
+            echo '<p>' . nl2br($parsed) . '</p>';
+            echo '<br>';
 
             if (!empty($article["git_commit"]))
                 echo '<a href="' . $article["git_commit"] . '">Github Commit</a>';
+
+            if ($is_admin) {
+                echo '<br>';
+                echo '<div class="admin_tools">';
+                echo '<b>Admin Tools</b>';
+                echo '<a href="admin/edit.php?id='.$article["id"].'">Edit</a>';
+                echo '<a href="admin/delete.php?id='.$article["id"].'">Remove</a>';
+                echo '</div>';
+
+            }
             echo '</div>';
         }
     }
