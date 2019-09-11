@@ -24,3 +24,10 @@ if (!is_admin()) {
 
 </div>
 #end()
+
+#start("Body")
+<div class="container">
+    <h5>Welcome <?php echo $_SESSION["username"] ?>.</h5>
+
+</div>
+#end()
