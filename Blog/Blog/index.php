@@ -37,17 +37,20 @@ $parser = new HTML_BBCodeParser2($options);
             echo '<p>' . nl2br($parsed) . '</p>';
             echo '<br>';
 
-            if (!empty($article["git_commit"]))
+            if (!empty($article["git_commit"])) {
                 echo '<a href="' . $article["git_commit"] . '">Github Commit</a>';
+                echo '<br>';
+            }
+
+            echo '<a href="comment.php?id=' . $article["id"] . '">Comment</a>';
 
             if ($is_admin) {
                 echo '<br>';
                 echo '<div class="admin_tools">';
                 echo '<b>Admin Tools</b>';
-                echo '<a href="admin/edit.php?id='.$article["id"].'">Edit</a>';
-                echo '<a href="admin/delete.php?id='.$article["id"].'">Remove</a>';
+                echo '<a href="admin/edit.php?id=' . $article["id"] . '">Edit</a>';
+                echo '<a href="admin/delete.php?id=' . $article["id"] . '">Remove</a>';
                 echo '</div>';
-
             }
             echo '</div>';
             echo '<hr>';
