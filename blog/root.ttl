@@ -31,11 +31,11 @@ if (isset($_SESSION["acctype"])) {
     <div id="navbar">
         #start("Navbar")
         <a href="index.php">Home</a>
+        <a href="blog/index.php">Blog</a>
         <a href="account.php">Account</a>
 
         <?php
         if ($is_admin) {
-            echo '<a href="post.php">New Post</a>';
             echo '<a href="admin.php">Admin Control</a>';
         }
         ?>

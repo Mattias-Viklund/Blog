@@ -1,4 +1,4 @@
-#template("default.ttl")
+#template("root.ttl")
 
 #start("Initialize")
 

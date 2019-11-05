@@ -1,8 +1,8 @@
-#template("default.ttl")
+#template("blog.ttl")
 
 #start("Initialize")
 <?php
-require_once("config.php");
+require_once("../config.php");
 require_once('HTML/BBCodeParser2.php');
 $config = parse_ini_file('BBCodeParser2.ini', true);
 $options = $config['HTML_BBCodeParser2'];
@@ -12,7 +12,7 @@ $parser = new HTML_BBCodeParser2($options);
 #end()
 
 #start("Head")
-<title>Index</title>
+<title>Smack that</title>
 #end()
 
 #start("Body")

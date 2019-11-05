@@ -1,10 +1,10 @@
-#template("default.ttl"):1
+#template("blog.ttl"):1
 
 #start("Body")
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["id"])) {
-        require_once("../config.php");
+        require_once("../../config.php");
         require_once("../articles.php");
 
         delete_article($link, $_POST["id"]);

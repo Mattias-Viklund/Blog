@@ -1,11 +1,11 @@
-#template("default.ttl")
+#template("root.ttl")
 
 #start("Initialize")
 <?php
 require_once "session.php";
 
 if (!is_admin()) {
-    header("location: Pages/notadmin.html");
+    header("location: pages/notadmin.html");
 }
 ?>
 #end()

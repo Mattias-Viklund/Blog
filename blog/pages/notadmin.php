@@ -1,4 +1,4 @@
-#template("default.ttl"):1
+#template("root.ttl"):1
 
 #start("Body")
 <div class="container">

@@ -1,8 +1,8 @@
-#template("default.ttl")
+#template("blog.ttl")
 
 #start("Initialize")
 <?php
-require_once "session.php";
+require_once "../session.php";
 
 if (!is_admin()) {
     echo "Only admins can post breh.";

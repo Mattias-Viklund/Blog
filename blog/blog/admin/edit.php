@@ -1,4 +1,4 @@
-#template("default.ttl"):1
+#template("blog.ttl"):1
 
 #start("Body")
 <?php
@@ -7,14 +7,14 @@ $id = -1;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    require_once("../config.php");
+    require_once("../../config.php");
     include_once("../articles.php");
     update_article($link, $_POST["id"], $_POST["title"], $_POST["thumbnail"], $_POST["text"], $_POST["git_commit"], $_POST["worktime"]);
 
 }
 
 if (isset($_GET["id"])) {
-    require_once("../config.php");
+    require_once("../../config.php");
     include_once("../articles.php");
 
     $id = $_GET["id"];
