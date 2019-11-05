@@ -63,6 +63,17 @@ footer {
     overflow: hidden;
 
 }
+<<<<<<< Updated upstream:Blog/Blog/Pages/blog.css
+=======
+
+/* Add a black background color to the top navigation */
+#categories {
+    background-color: #111;
+    overflow: hidden;
+
+}
+  
+>>>>>>> Stashed changes:blog/blog.css
   
 /* Style the links inside the navigation bar */
 #navbar a {

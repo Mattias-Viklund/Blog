@@ -14,11 +14,14 @@ $parser = new HTML_BBCodeParser2($options);
 <title>Index</title>
 #end()
 
+#start("Navbar")
+#end()
+
 #start("Body")
 <div class="container">
     <?php
     require_once("articles.php");
-    $articles = articles_load($link);
+    $articles = articles_load($link, 1, 0);
     if (is_array($articles) || is_object($articles)) {
         foreach ($articles as $article) {
             echo '<div class="post">';

@@ -6,7 +6,14 @@
         {
             "label": "Build Web",
             "type": "shell",
+<<<<<<< Updated upstream
             "command": "C:\\Users\\Mew_\\Documents\\GitHub\\Blog\\build2.bat",
+=======
+            // "command": "C:\\Users\\Mew_\\Documents\\GitHub\\Blog\\buildhome.bat",
+            // "command": "C:\\Users\\Mew_\\Documents\\GitHub\\Blog\\buildlocal.bat",
+            // "command": "C:\\Users\\elev\\Desktop\\Blog\\buildschool.bat",
+            "command": "C:\\Users\\elev\\Desktop\\Blog\\buildlocalschool.bat",
+>>>>>>> Stashed changes
             "problemMatcher": [],
             "group": {
                 "kind": "build",

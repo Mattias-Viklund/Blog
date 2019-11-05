@@ -1,6 +1,13 @@
 <?php
 // Initialize the session
 session_start();
+
+$is_user = $is_admin = false;
+
+if (isset($_SESSION["acctype"])) {
+    $is_user = true;
+    $is_admin = (($_SESSION["acctype"] == 0) ? true : false);
+}
 ?>
 
 #start("Initialize")
@@ -15,46 +22,44 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="blog.css">
-
+    <link rel="stylesheet" type="text/css" href="../blog.css"/>
     #start("Head")
     #end()
+
 </head>
 
 <body>
     <div id="navbar">
-        <a href="index.php">Home</a>
-        <a href="index.php">Blog</a>
-        <a href="account.php">Account</a>
-<<<<<<< Updated upstream:Blog/Blog/default.ttl
-        <a href="logout.php" style="float: right;">Sign Out</a>
-        <a href="admin.php" style="float: right;">Admin</a>
-
-=======
+        <a href="../index.php">Home</a>
+        <a href="../blog/index.php">Blog</a>
+        <a href="../account.php">Account</a>
 
         <?php
         if ($is_admin) {
-            echo '<a href="admin.php">Admin Control</a>';
+            echo '<a href="post.php">New Post</a>';
+            echo '<a href="../admin.php">Admin Control</a>';
         }
         ?>
 
         <?php
         if ($is_user) {
-            echo '<a href="logout.php" style="float: right;">Sign Out</a>';
-
+            echo '<a href="../logout.php" style="float: right;">Sign Out</a>';
         } else {
-            echo '<a href="login.php" style="float: right;">Sign In</a>';
-
+            echo '<a href="../login.php" style="float: right;">Sign In</a>';
         }
         ?>
-        
+
         #start("Navbar")
->>>>>>> Stashed changes:blog/root.ttl
         #end()
+
     </div>
 
     #start("Body")
     #end()
+
+    #start("Categories")
+    #end()
+
 </body>
 
 </html>
