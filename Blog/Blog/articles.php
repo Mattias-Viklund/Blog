@@ -1,14 +1,27 @@
 <?php
-function articles_load($link)
+function articles_load($link, $count = 0, $offset = 0)
 {
-    $sql = 'SELECT * FROM `posts` ORDER BY date DESC';
-    $stmt = mysqli_prepare($link, $sql);
+    if ($count == 0) {
+        $sql = 'SELECT * FROM `posts` ORDER BY date DESC';
+        $stmt = mysqli_prepare($link, $sql);
 
-    if ($stmt) {
-        if (mysqli_stmt_execute($stmt)) {
-            return mysqli_stmt_get_result($stmt);
-        } else {
-            echo "Something went wrong. Please try again later.";
+        if ($stmt) {
+            if (mysqli_stmt_execute($stmt)) {
+                return mysqli_stmt_get_result($stmt);
+            } else {
+                echo "Something went wrong. Please try again later.";
+            }
+        }
+    } else {
+        $sql = 'SELECT * FROM `posts` ORDER BY date DESC LIMIT '.$count.' OFFSET '.$offset;
+        $stmt = mysqli_prepare($link, $sql);
+
+        if ($stmt) {
+            if (mysqli_stmt_execute($stmt)) {
+                return mysqli_stmt_get_result($stmt);
+            } else {
+                echo "Something went wrong. Please try again later.";
+            }
         }
     }
 }
