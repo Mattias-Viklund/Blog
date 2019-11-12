@@ -2,17 +2,8 @@
 
 #start("Initialize")
 <?php
-// Initialize the session
-session_start();
-
-$is_user = $is_admin = false;
 $resultsperpage = 5;
 $page = 0;
-
-if (isset($_SESSION['acctype'])) {
-    $is_user = true;
-    $is_admin = (($_SESSION['acctype'] == 0) ? true : false);
-}
 
 if (isset($_GET['page'])) {
     $page = $_GET["page"];
@@ -100,9 +91,9 @@ $parser = new HTML_BBCodeParser2($options);
         <a href="#">3</a>
     </div>
     <div class="links nopad">
-        <a href="#">Github</a>
-        <a href="#">Twitter</a>
-        <a href="#">Steam</a>
+        <a href="https://github.com/mattias-viklund">Github</a>
+        <a href="https://github.com/mattias_viklund">Twitter</a>
+        <a href="https://steamcommunity.com/id/zeseductivebanana">Steam</a>
     </div>
 </div>
 #end()

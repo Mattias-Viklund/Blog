@@ -12,3 +12,9 @@
 
 #start("Body")
 #end()
+
+#start("Sidebar")
+#end()
+
+#start("Main")
+#end()

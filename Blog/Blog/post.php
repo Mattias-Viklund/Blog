@@ -1,4 +1,4 @@
-#template("blog.ttl")
+#template("blog2.ttl")
 
 #start("Initialize")
 <?php
@@ -49,38 +49,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 #end()
 
+
+#start("Navbar")
+#end()
+
+#start("Body")
+#end()
+
+#start("Sidebar")
+<h3>Create a New Post</h3>
+<p>
+Make sure it's descriptive,
+and all that jazz.
+</p>
+#end()
+
 #start("Head")
 <title>Welcome</title>
 #end()
 
-#start("Body")
-<div class="container">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <p>Create new Post.</p>
-        <div>
-            <label>Title</label><br />
-            <input type="text" name="title" class="form-group" id="half" value="<?php echo $title; ?>">
-        </div>
-        <div>
-            <label>Thumbnail URL</label><br />
-            <input type="text" name="thumbnail" class="form-group" id="half" value="<?php echo $thumbnail; ?>">
-        </div>
-        <div>
-            <label>Text</label><br />
-            <textarea name="text" rows="28" cols="100" class="form-group" id="half" value="<?php echo $text; ?>"></textarea>
-        </div>
-        <div>
-            <label>Work Time</label><br />
-            <input type="number" name="worktime" min="0" max="12" style="color:#000; width:25%;" class="form-group" value="<?php echo $worktime; ?>">
-        </div>
-        <div>
-            <label>Github Commit Link</label><br />
-            <input type="text" name="git_commit" class="form-group" id="half" value="<?php echo $git_commit; ?>">
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </div>
-    </form>
-</div>
+#start("Main")
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <p>Create new Post.</p>
+    <div>
+        <label>Title</label><br />
+        <input type="text" name="title" class="form-group" id="half" value="<?php echo $title; ?>">
+    </div>
+    <div>
+        <label>Thumbnail URL</label><br />
+        <input type="text" name="thumbnail" class="form-group" id="half" value="<?php echo $thumbnail; ?>">
+    </div>
+    <div>
+        <label>Text</label><br />
+        <textarea name="text" rows="28" cols="100" class="form-group" id="half" value="<?php echo $text; ?>"></textarea>
+    </div>
+    <div>
+        <label>Work Time</label><br />
+        <input type="number" name="worktime" min="0" max="12" style="color:#000; width:25%;" class="form-group" value="<?php echo $worktime; ?>">
+    </div>
+    <div>
+        <label>Github Commit Link</label><br />
+        <input type="text" name="git_commit" class="form-group" id="half" value="<?php echo $git_commit; ?>">
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+</form>
 #end()

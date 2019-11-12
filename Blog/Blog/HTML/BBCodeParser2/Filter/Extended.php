@@ -62,7 +62,7 @@ class HTML_BBCodeParser2_Filter_Extended extends HTML_BBCodeParser2_Filter
                                                 'attributes'=> array('quote' =>'cite=%2$s%1$s%2$s')),
                                 'code' => array('htmlopen'  => 'code',
                                                 'htmlclose' => 'code',
-                                                'allowed'   => 'all',
+                                                'allowed'   => 'none',
                                                 'attributes'=> array()),
                                 'h1' => array('htmlopen'  => 'h1',
                                                 'htmlclose' => 'h1',

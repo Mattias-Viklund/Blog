@@ -1,8 +1,9 @@
 body {
     color: #c6c2ba;
     background-color: #000;
+    font-family: 'Merriweather', serif;
 
-}
+}   
 
 @-ms-viewport {
     width: device-width;
