@@ -47,7 +47,7 @@ function new_category($link, $name)
         }
     }
 
-    $sql = "INSERT INTO `categories` (name) VALUES ('".$name."')";
+    $sql = "INSERT INTO `categories` (name) VALUES ('" . $name . "')";
 
     $stmt = mysqli_prepare($link, $sql);
     print_r($stmt);
@@ -59,10 +59,8 @@ function new_category($link, $name)
             echo "Could not create new category. Please try again later.";
             return 0;
         }
-    } else
-    {
+    } else {
         echo "Something went wrong. Try again later.";
-
     }
 }
 
@@ -143,15 +141,24 @@ function get_total_articles($link, $category = -1)
     }
 }
 
-function update_article($link, $id, $title, $thumbnail, $content, $git_commit, $worktime)
+function update_article($link, $id, $title, $thumbnail, $category, $content, $git_commit, $updateTime, $worktime)
 {
-    $sql = 'UPDATE `posts` SET title=?, thumbnail=?, content=?, git_commit=?, date=current_timestamp(), worktime=? WHERE id=' . $id;
+    $sql = 'UPDATE `posts` SET title=?, thumbnail=?, category=?, content=?, git_commit=?';
+    $time =  ',date=current_timestamp()';
+    $finisher =  ', worktime=? WHERE id=' . $id;
+
+    if ($updateTime) {
+        $sql = $sql . $time;
+    }
+
+    $sql = $sql . $finisher;
 
     if ($stmt = mysqli_prepare($link, $sql)) {
-        mysqli_stmt_bind_param($stmt, "sssss", $param_title, $param_thumbnail, $param_content, $param_git_commit, $param_worktime);
+        mysqli_stmt_bind_param($stmt, "ssssss", $param_title, $param_thumbnail, $param_category, $param_content, $param_git_commit, $param_worktime);
 
         $param_title = $title;
         $param_thumbnail = $thumbnail;
+        $param_category = $category;
         $param_content = $content;
         $param_git_commit = $git_commit;
         $param_worktime = $worktime;

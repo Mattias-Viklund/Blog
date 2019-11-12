@@ -77,11 +77,11 @@ $course_id_index  = 0;
 
 <head>
     <style>
-        #information {
+        .information {
             display: block;
         }
 
-        #course {
+        .course {
             display: none;
         }
 
@@ -103,7 +103,7 @@ $course_id_index  = 0;
 
 <body>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <select id="information" name="query">
+        <select class="information" id="information" name="query">
             <option value="" selected>Select Information</option>
             <?php
             for ($i = 0; $i < count($inf); $i++) {
@@ -111,7 +111,7 @@ $course_id_index  = 0;
             }
             ?>
         </select>
-        <select id="course" name="course">
+        <select class="course" id="course" name="course">
             <option value="-1" selected>Select Course</option>
             <?php
             for ($i = 0; $i < count($courses); $i++) {
