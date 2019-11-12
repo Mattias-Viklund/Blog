@@ -4,9 +4,13 @@
 <?php
 $resultsperpage = 5;
 $page = 0;
+$category = -1;
 
 if (isset($_GET['page'])) {
-    $page = $_GET["page"];
+    $page = $_GET['page'];
+}
+if (isset($_GET['category'])) {
+    $category = $_GET['category'];
 }
 
 require_once("../config.php");
@@ -14,6 +18,8 @@ require_once('HTML/BBCodeParser2.php');
 $config = parse_ini_file('BBCodeParser2.ini', true);
 $options = $config['HTML_BBCodeParser2'];
 $parser = new HTML_BBCodeParser2($options);
+
+require_once("articles.php");
 
 ?>
 #end()
@@ -32,9 +38,14 @@ $parser = new HTML_BBCodeParser2($options);
 <h3 class="m-shade">Categories</h3>
 <hr>
 <ul>
-    <li><a href="#">Making the Blog</a></li>
-    <li><a href="#">Grapple Guy</a></li>
-    <li><a href="#">Overlord</a></li>
+    <?php
+    $categories = get_categories($link);
+    if (is_array($categories) || is_object($categories)) {
+        foreach ($categories as $cat) {
+            echo '<li><a href="' . $_SERVER['PHP_SELF'] . '?category=' . $cat['id'] . '">' . $cat['name'] . '</a></li>';
+        }
+    }
+    ?>
 
 </ul>
 #end()
@@ -44,8 +55,8 @@ $parser = new HTML_BBCodeParser2($options);
 <hr>
 <div class="post">
     <?php
-    require_once("articles.php");
-    $articles = articles_load($link, $resultsperpage, $resultsperpage * $page);
+    $articleCount = get_total_articles($link, $category)[0];
+    $articles = articles_load($link, $resultsperpage, $resultsperpage * $page, $category);
     if (is_array($articles) || is_object($articles)) {
         foreach ($articles as $article) {
             echo '<div class="post">';
@@ -86,9 +97,13 @@ $parser = new HTML_BBCodeParser2($options);
 </div>
 <div>
     <div class="links nopad">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
+        <?php
+        $pages = ceil($articleCount / $resultsperpage);
+
+        for ($i = 0; $i < $pages; $i++) {
+            echo '<a href="' . $_SERVER['PHP_SELF'] . '?page=' . $i . '">' . $i . '</a>';
+        }
+        ?>
     </div>
     <div class="links nopad">
         <a href="https://github.com/mattias-viklund">Github</a>

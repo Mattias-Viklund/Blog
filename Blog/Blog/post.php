@@ -3,13 +3,34 @@
 #start("Initialize")
 <?php
 require_once "../session.php";
+require_once("articles.php");
 
 if (!is_admin()) {
     echo "Only admins can post breh.";
     exit(420);
 }
 
-$title = $thumbnail = $text = $worktime = $git_commit = "";
+$title = $thumbnail = $category = $text = $worktime = $git_commit = "";
+
+function generate_category($link)
+{
+    $hasCategory = !empty($_POST['category'])  || !empty($_POST['customCategory']);
+    if ($hasCategory) {
+        if (!empty($_POST['category'])) {
+            return $_POST['category'];
+        }
+
+        if (!empty($_POST['customCategory'])) {
+            $wat = new_category($link, $_POST['customCategory']);
+            echo $wat;
+            return $wat;
+        }
+    } else {
+        return 0;
+        echo "Select a Category fam.";
+        die();
+    }
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["title"]) || empty($_POST["text"])) {
@@ -18,21 +39,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $title = $_POST["title"];
         $thumbnail = (!empty($_POST["thumbnail"]) ? $_POST["thumbnail"] : "");
+        $category = generate_category($link);
         $text = $_POST["text"];
         $worktime = (!empty($_POST["worktime"]) ? $_POST["worktime"] : 0);
         $git_commit = (!empty($_POST["git_commit"]) ? $_POST["git_commit"] : "");
     }
 
-    $sql = "INSERT INTO `posts` (title, thumbnail, content, worktime, git_commit) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO `posts` (title, thumbnail, category, content, worktime, git_commit) VALUES (?, ?, ?, ?, ?, ?)";
 
     $stmt = mysqli_prepare($link, $sql);
 
     if ($stmt) {
 
-        mysqli_stmt_bind_param($stmt, "sssss", $param_title, $param_thumbnail, $param_text, $param_worktime, $param_git_commit);
+        mysqli_stmt_bind_param($stmt, "ssssss", $param_title, $param_thumbnail, $param_category, $param_text, $param_worktime, $param_git_commit);
 
         $param_title = $title;
         $param_thumbnail = $thumbnail;
+        $param_category = $category;
         $param_text = $text;
         $param_worktime = $worktime;
         $param_git_commit = $git_commit;
@@ -40,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mysqli_stmt_execute($stmt)) {
             header("location: index.php");
         } else {
-            echo "Something went wrong. Please try again later.";
+            echo "Something went wrong. Please try again later. insert into";
         }
         mysqli_stmt_close($stmt);
     }
@@ -59,8 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 #start("Sidebar")
 <h3>Create a New Post</h3>
 <p>
-Make sure it's descriptive,
-and all that jazz.
+    Make sure it's descriptive,
+    and all that jazz.
 </p>
 #end()
 
@@ -78,6 +101,23 @@ and all that jazz.
     <div>
         <label>Thumbnail URL</label><br />
         <input type="text" name="thumbnail" class="form-group" id="half" value="<?php echo $thumbnail; ?>">
+    </div>
+    <div>
+        <label>Category</label>
+        <select name="category">
+            <option value="">Custom Category</option>
+            <?php
+            $categories = get_categories($link);
+            if (is_array($categories) || is_object($categories)) {
+                foreach ($categories as $cat) {
+                    echo '<option value="' . $cat['id'] . '">' . $cat['name'] . '</option>';
+                }
+            }
+            ?>
+        </select>
+        <label>OR</label>
+        <input type="text" name="customCategory" class="form-group" id="half" value="" />
+
     </div>
     <div>
         <label>Text</label><br />

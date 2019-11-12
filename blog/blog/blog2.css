@@ -5,6 +5,19 @@ body {
 
 }   
 
+.navtable {
+    width: 100;
+    display: table;
+}
+
+.navitem {
+    display: table-cell;   
+}
+
+.navitem a{
+    display: block;
+}
+
 @-ms-viewport {
     width: device-width;
 }
