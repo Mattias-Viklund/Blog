@@ -1,4 +1,4 @@
-#template("blog3.ttl")
+#template("blog1.ttl"):2
 
 #start("Initialize")
 #end()

@@ -1,4 +1,4 @@
-#template("blog2.ttl")
+#template("blog1.ttl"):1
 
 #start("Initialize")
 <?php
@@ -6,7 +6,7 @@ require_once "../session.php";
 require_once("articles.php");
 
 if (!is_admin()) {
-    echo "Only admins can post breh.";
+    echo "Post function is for Glorious Admins only, sorry.";
     exit(420);
 }
 

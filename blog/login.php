@@ -1,5 +1,16 @@
 #template("blog1.ttl")
 
+#start("Navbar")
+#end()
+
+#start("Body")
+#end()
+
+#start("Sidebar")
+<h3 class="m-shade">Sign in</h3>
+<p>Welcome to Exedump stranger. &lt;3</p>
+#end()
+
 #start("Initialize")
 <?php
 require_once "config.php";
@@ -63,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <title>Login</title>
 #end()
 
-#start("Body")
+#start("Main")
 <div class="wrapper">
     <h2>Login</h2>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

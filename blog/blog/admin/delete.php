@@ -1,4 +1,4 @@
-#template("blog.ttl"):1
+#template("blog1.ttl"):2
 
 #start("Body")
 <?php

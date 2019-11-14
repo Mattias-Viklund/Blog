@@ -1,12 +1,9 @@
 #template("blog1.ttl")
 
 #start("Initialize")
-
 <?php
-require_once("session.php");
 
 ?>
-
 #end()
 
 #start("Head")
@@ -17,5 +14,14 @@ require_once("session.php");
 #end()
 
 #start("Body")
-<p>Nothing Here</p>
+#end()
+
+#start("Sidebar")
+<h3 class="m-shade">Account Settings</h3>
+<p>You thinking about changing settings?<br>Here's the place to do it.</p>
+#end()
+
+#start("Main")
+<p>Account Type</p>
+<?= '<h3 class="m-shade">' . (($is_admin) ? 'GLORIOUS ADMIN' : 'PESEANT') . '</h3>'; ?>
 #end()

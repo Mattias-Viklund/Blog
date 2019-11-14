@@ -1,4 +1,4 @@
-#template("blog2.ttl")
+#template("blog1.ttl"):1
 
 #start("Initialize")
 <?php

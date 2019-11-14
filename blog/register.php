@@ -1,4 +1,16 @@
-#template("blog.ttl")
+#template("blog1.ttl")
+
+#start("Navbar")
+#end()
+
+#start("Body")
+#end()
+
+#start("Sidebar")
+<h3 class="m-shade">Create an account</h3>
+<p>Glad you want to sign up,<br>I mean, there's nothing you can do on here<br>But it makes me happy either way.</p>
+<p>Make sure you don't actually place one of your real passwords in here in case I get hacked.</p>
+#end()
 
 #start("Initialize")
 <?php
@@ -75,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <title>Sign Up</title>
 #end()
 
-#start("Body")
+#start("Main")
 <h2>Sign Up</h2>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
     <div>
