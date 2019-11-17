@@ -8,6 +8,8 @@
 
 #start("Sidebar")
 <h3 class="m-shade">Sign in</h3>
+<hr>
+
 <p>Welcome to Exedump stranger. &lt;3</p>
 #end()
 

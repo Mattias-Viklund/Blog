@@ -81,6 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 #start("Sidebar")
 <h3>Create a New Post</h3>
+<hr>
 <p>
     Make sure it's descriptive,
     and all that jazz.

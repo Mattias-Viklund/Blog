@@ -15,6 +15,8 @@
 
 #start("Sidebar")
 <h3 class="m-shade">Downloads</h3>
+<hr>
+
 <p>Select a file and press download, duh.</p>
 #end()
 

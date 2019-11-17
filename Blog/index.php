@@ -20,6 +20,7 @@
 
 #start("Sidebar")
 <h3 class="m-shade">Welcome Home</h3>
+<hr>
 <p>Welcome to Exedump, my hobby project.</p>
 <br>
 <p>I usually don't do much other than school and play games.</p>
