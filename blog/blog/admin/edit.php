@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include_once("../articles.php");
 
     update_article($link, $_POST["id"], $_POST["title"], $_POST["thumbnail"], $_POST["category"], $_POST["text"], $_POST["git_commit"], $_POST['updateTime'], $_POST["worktime"]);
+
 }
 
 if (isset($_GET["id"])) {

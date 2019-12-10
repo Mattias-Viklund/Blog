@@ -1,4 +1,3 @@
-<html>
 
 <?php
 // Initialize the session
@@ -14,6 +13,8 @@ if (isset($_SESSION["acctype"])) {
 
 #start("Initialize")
 #end()
+
+<html>
 
 <head>
     <meta charset="utf-8">

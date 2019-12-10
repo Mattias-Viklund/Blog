@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 #end()
 
 #start("Head")
-<title>Welcome</title>
+<title>Exedump Post</title>
 #end()
 
 #start("Main")
