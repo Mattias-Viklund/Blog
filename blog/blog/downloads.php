@@ -1,4 +1,4 @@
-#template("blog1.ttl"):1
+#template("blog.ttl"):1
 
 #start("Initialize")
 #end()
@@ -22,8 +22,12 @@
 
 #start("Main")
 <ul>
-    <li>Hoax</li>
-    <li>Git</li>
-    <li>YEahboi</li>
+    <li>Zoinks Scoob!</li>
+    <li>Bazinga!</li>
+    <li>Test Test Test</li>
+    <li>Test Test Test</li>
+    <li>Test Test Test</li>
+    <li>Test Test Test</li>
+    <li>Test Test Test</li>
 </ul>
 #end()

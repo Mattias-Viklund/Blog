@@ -1,7 +1,31 @@
-#template("blog1.ttl"):2
+#template("blog.ttl"):2
+
+#start("Initialize")
+#end()
+
+#start("Head")
+<title>Delete Post</title>
+#end()
+
+#start("Navbar")
+#end()
 
 #start("Body")
+#end()
+
+#start("Sidebar")
+<h3 class="m-shade">Delete</h3>
+<p>Delete posts.</p>
+#end()
+
+#start("Main")
 <?php
+if (!$is_admin)
+{
+    echo "<p>You're not an admin. Go away, shoo.</p>";
+    die();
+
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["id"])) {
         require_once("../../config.php");

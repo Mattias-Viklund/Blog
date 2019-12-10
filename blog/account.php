@@ -1,4 +1,4 @@
-#template("blog1.ttl")
+#template("blog.ttl")
 
 #start("Initialize")
 <?php
@@ -22,6 +22,10 @@ require_once "session.php";
 <hr>
 
 <p>You thinking about changing settings?<br>Here's the place to do it.</p>
+<?php
+if ($is_admin)
+    echo '<a href="/blog/post.php">' . 'New Post' . '</a><br>';
+?>
 <a href="logout.php">Sign out</a>
 #end()
 

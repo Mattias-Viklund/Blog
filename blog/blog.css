@@ -1,33 +1,76 @@
 body {
-    font-family: Garamond,Times New Roman, Serif; 
-    text-decoration: none;
-    color: #e2e0db;
-    background-color: #181a1b;
+    color: #c6c2ba;
+    background-color: #000;
+    font-family: 'Merriweather', serif;
 
+}   
+
+.navtable {
+    width: 100;
+    display: table;
 }
 
-code {
-    color: #e36988;
-    background-color: #281319;
+.navitem {
+    display: table-cell;   
+}
 
+.navitem a{
+    display: block;
+}
+
+@-ms-viewport {
+    width: device-width;
 }
 
 a {
-    color: #79b0da;
+    color: #dab66c;
+    text-decoration: none;
 
 }
 
-input {
-    color: #000;
+.post {
+    padding: 0px;
+    margin: 0px;
 
 }
 
-.post{
-    margin-bottom: 20px;
+.links {
+    padding: 25px;
+    display: block;
+    text-align: center;
 
 }
 
-.admin_tools{
+.links a {
+    margin-right: 15px;
+}
+
+hr {
+    background-color: #FFF;
+    display: grid;
+}
+
+.sidebar {
+    border-right: solid 1px #FFF;
+    width: 20%;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: inline;
+    padding: 0px 50px 0px 0px;
+
+}
+
+.post h3 {
+    color: #79aadd;
+}
+
+.post h5 {
+    color: #496685;
+}
+
+.admin_tools {
     display: inline;
     padding: 5px 16px 10px 0px;
 
@@ -38,97 +81,53 @@ input {
 
 }
 
-.newpost{
-    padding-left: 15%;
-    margin-left: 15%;
+.m-dark {
+    background-color: #101010;
 
 }
 
-#half{
-    width: 50%;
-    color: #000;
+.m-dark .navbar-brand {
+    color: #FFF;
 
 }
 
-#highlight {
-    color:	#DAB66C;
-    
-}
-
-footer {
-    position: absolute;
-    color: #111;
-    bottom: 0;
+.m-light {
+    border: 1px solid #FFF;
+    background-color: #101010;
+    color: #FFF;
+    stroke: #FFF;
 
 }
 
-#title {
-    width: 600px;
-    height: 150px;
+.m-shade {
+    text-shadow: 2px 2px 8px #79aadd;
+}
+
+.nopad {
+    padding: 0px 0px 10px 0px;
 
 }
 
-/* Add a black background color to the top navigation */
-#navbar {
-    background-color: #111;
-    overflow: hidden;
-
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* Add a black background color to the top navigation */
-#catbar {
-    background-color: #111;
-    overflow: hidden;
+@media only screen and (max-width: 768px) {
+    .title-img {
+        display: none;
 
-}
-  
-  
-/* Style the links inside the navigation bar */
-#navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 14px;
-    display: block;
-
+    }
 }
 
+@media only screen and (max-width: 1014px) {
+    .sidebar {
+        border: none;
+    }
 
-/* Change the color of links on hover */
-#navbar a:hover {
-    background-color: #C6C2BA;
-    color: black;
+    .m-content {
+        /* width: 100%; */
+        flex: 0 0 100%;
+        max-width: 100%;
 
-}
-  
- /* Add a color to the active/current link */
- #navbar a.active {
-    background-color: #DAB66C;
-    color: white;
-
-}
-
-.catbar {
-    width: 200px;
-    height: 150px;
-    overflow-y: auto;
-    
-}
-  
-.catbar a {
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-}
-  
-.catbar a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-}
-  
-.catbar a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
+    }
 }

@@ -1,10 +1,10 @@
-#template("blog1.ttl"):2
+#template("blog.ttl"):2
 
 #start("Initialize")
 #end()
 
 #start("Head")
-<title>Edit</title>
+<title>Edit Post</title>
 #end()
 
 #start("Navbar")
@@ -20,6 +20,13 @@
 
 #start("Main")
 <?php
+if (!$is_admin)
+{
+    echo "<p>You're not an admin. Go away, shoo.</p>";
+    die();
+
+}
+
 $title = $thumbnail = $category = $text = $worktime = $git_commit = "";
 $id = -1;
 
