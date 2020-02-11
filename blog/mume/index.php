@@ -55,12 +55,22 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
     <li><a href="./forum_guides/guide_zaug.php">Zaugurz Guide</a> (By <a href="https://mumeresource.wordpress.com/guides/zaugurz/">Mumeresource</a>)</li>    
     <li><a href="./jpetazzo/index.php">Misc Guides</a> (By <a href="https://github.com/jpetazzo">jpetazzo</a>)</li>
 </ul>
-</div>
+<hr>
+<h5>Stats, Strats and Misc.</h5>
+<p>Same as above, information on these pages may be outdated, since some of them are over ~10 years old.</p>
+<ul>
+    <li><a href="./stats/strat.htm">Jahara's Strategies</a> (By <a href="https://mume.schimmelmann.us/strat.htm">Jahara</a>)</li>
+    <li><a href="./stats/items.htm">Jahara's Items [Outdated Since 2003]</a> (By <a href="https://mume.schimmelmann.us/items.htm">Jahara</a>)</li>
+    <li><a href="./stats/skills.html">Vrak's Skills</a> (By <a href="http://www.e.kth.se/archive/lnk/vrak/mume/about_mume/">Vrak</a>)</li>
+    <li><a href="./stats/spells.html">Vrak's Spells</a> (By <a href="http://www.e.kth.se/archive/lnk/vrak/mume/about_mume/">Vrak</a>)</li>
+</ul>
 <hr>
 <h5>Archived Websites.</h5>
 <p>Clicking the Archived Links will bring you to my own copy of these. Last updated February 11th 2020.</p>
 <ul>
     <li><a href="./mume.org/wiki/index.php/Newbie.html">MUME.ORG Wiki </a><a href="https://mume.org/wiki">(Live Version)</a></li>
+    <li><a href="./mume.schimmelmann.us/index.html">Jahara's Mume Site </a><a href="https://mume.schimmelmann.us/index.htm">(Live Version)</a></li>
+    <li><a href="./vrak/index.html">Vrak's Mume Pages </a><a href="http://www.e.kth.se/archive/lnk/vrak/mume/">(Live Version)</a></li>
     <li><a href="./tabris23.tripod.com/index.html">Tripod's Mume Website </a><a href="http://tabris23.tripod.com/">(Live Version)</a></li>
     <li><a href="./mumeresource.wordpress.com/index.html">Mumeresource.com </a><a href="https://mumeresource.wordpress.com/">(Live Version)</a></li>
     <li><a href="./mume.yllemo.com/doku.php.html">Yllemo's Mume Website </a><a href="http://mume.yllemo.com/doku.php?id=what_is_mume">(Live Version)</a></li>
@@ -74,5 +84,6 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
 <ul>
     <li><a href="http://elvenrunes.com">Elvenrunes (Main hub for MUME)</a></li>
 </ul>
+
 </div>
 #end()
