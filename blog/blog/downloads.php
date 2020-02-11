@@ -30,7 +30,6 @@
 <h5>Archived Websites.</h5>
 <p>Download the zipped archives here. Last updated February 11th 2020.</p>
 <ul>
-<li>
     <li><a href="../mume/mume.schimmelmann.us.zip">Jaraha.zip</a></li>
     <li><a href="../mume/mume.org.zip">MUME.ORG Wiki.zip</a></li>
     <li><a href="../mume/tabris23.tripod.com.zip">Tripod's Mume Website.zip</a></li>
