@@ -48,8 +48,11 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
 <p>Informations on these guides should always be checked on by asking someone ingame, since they are almost 10 years old at the time of writing this.</p>
 <ul>
     <li><a href="./forum_guides/guide_warriors.php">Warriors Guide</a> (By <a href="https://mume.org/forum/memberlist.php?mode=viewprofile&u=441&sid=61cf45d5db21ecf0c78770200de6d3e4">Andróg</a>)</li>
+    <li><a href="./forum_guides/guide_warrior.php">Warrior Guide</a> (By <a href="https://mumeresource.wordpress.com/guides/warrior-guide/">Mumeresource</a>)</li>
     <li><a href="./forum_guides/guide_cleric.php">Cleric Guide</a> (By <a href="https://mume.org/forum/memberlist.php?mode=viewprofile&u=441&sid=61cf45d5db21ecf0c78770200de6d3e4">Andróg</a>)</li>
     <li><a href="./forum_guides/guide_scout.php">Scout Guide</a> (By <a href="https://mume.org/forum/memberlist.php?mode=viewprofile&u=441&sid=61cf45d5db21ecf0c78770200de6d3e4">Andróg</a>)</li>
+    <li><a href="./forum_guides/guide_troll.php">Troll Guide</a> (By <a href="https://mume.org/forum/memberlist.php?mode=viewprofile&u=151">Ortansia</a>)</li>    
+    <li><a href="./forum_guides/guide_zaug.php">Zaugurz Guide</a> (By <a href="https://mumeresource.wordpress.com/guides/zaugurz/">Mumeresource</a>)</li>    
     <li><a href="./jpetazzo/index.php">Misc Guides</a> (By <a href="https://github.com/jpetazzo">jpetazzo</a>)</li>
 </ul>
 </div>
@@ -59,6 +62,7 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
 <ul>
     <li><a href="./mume.org/wiki/index.php/Newbie.html">MUME.ORG Wiki </a><a href="https://mume.org/wiki">(Live Version)</a></li>
     <li><a href="./tabris23.tripod.com/index.html">Tripod's Mume Website </a><a href="http://tabris23.tripod.com/">(Live Version)</a></li>
+    <li><a href="./mumeresource.wordpress.com/index.html">Mumeresource.com </a><a href="https://mumeresource.wordpress.com/">(Live Version)</a></li>
     <li><a href="./mume.yllemo.com/doku.php.html">Yllemo's Mume Website </a><a href="http://mume.yllemo.com/doku.php?id=what_is_mume">(Live Version)</a></li>
     <p>^This resource needs you to be logged in to read a lot. Unfortunate, but nothing I could do about it. Visit live page for all that info.</p>
     <br>
