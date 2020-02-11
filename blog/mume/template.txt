@@ -1,0 +1,25 @@
+#template("blog.ttl"):2
+
+#start("Initialize")
+#end()
+
+#start("Head")
+<title>Class Guide</title>
+#end()
+
+#start("Navbar")
+#end()
+
+#start("Body")
+#end()
+
+#start("Sidebar")
+<h3 class="m-shade">Warrior Guide</h3>
+<hr>
+<p>Written by <a href="https://mume.org/forum/memberlist.php?mode=viewprofile&u=441&sid=61cf45d5db21ecf0c78770200de6d3e4">Andróg</a></p>
+#end()
+
+#start("Main")
+<div class="txt_content">
+</div>
+#end()

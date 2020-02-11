@@ -41,6 +41,15 @@ a {
 
 }
 
+.txt_content{
+    width: 800px;
+}
+
+.txt_content strong {
+    color: #496685;
+
+}
+
 .links a {
     margin-right: 15px;
 }

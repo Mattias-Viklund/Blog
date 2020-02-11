@@ -22,12 +22,9 @@
 
 #start("Main")
 <ul>
-    <li>Zoinks Scoob!</li>
-    <li>Bazinga!</li>
-    <li>Test Test Test</li>
-    <li>Test Test Test</li>
-    <li>Test Test Test</li>
-    <li>Test Test Test</li>
-    <li>Test Test Test</li>
+    <li><a href="https://github.com/Mattias-Viklund/">My own repositories, MUME unrelated.</a></li>
+    <li><a href="https://github.com/MUME/MMapper">MMapper</a></li>
+    <li><a href="https://github.com/MUME/PowTTY">Powtty</a></li>
+    <li><a href="https://github.com/jpetazzo/mume/blob/master/arda.mm2">Latest Arda.mm2 Map</a></li>
 </ul>
 #end()

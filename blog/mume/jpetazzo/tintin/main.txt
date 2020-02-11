@@ -1,0 +1,25 @@
+#split
+
+#read tintin/notify.tin
+#read tintin/clock.tin
+#read tintin/rip.tin
+#read tintin/months.tin
+#read tintin/data-keys.tin
+#read tintin/data-herbs.tin
+#read tintin/data-mobs.tin
+#read tintin/convenience.tin
+#read tintin/aliases.tin
+#read tintin/highlights.tin
+#read tintin/keymap.tin
+#read tintin/prompt.tin
+
+gg
+
+#session MUME localhost 4242 .login
+
+#script {timestamp} {date +%Y-%m-%d_%H:%M:%S}
+#system {mkdir -p logs}
+#log {append} {logs/$timestamp[1].log}
+#system {rm -f log}
+#system {ln -s logs/$timestamp[1].log log}
+
