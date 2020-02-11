@@ -27,4 +27,11 @@
     <li><a href="https://github.com/MUME/PowTTY">Powtty</a></li>
     <li><a href="https://github.com/jpetazzo/mume/blob/master/arda.mm2">Latest Arda.mm2 Map</a></li>
 </ul>
+<h5>Archived Websites.</h5>
+<p>Clicking the Archived Links will bring you to my own copy of these. Last updated February 11th 2020.</p>
+<ul>
+    <li><a href="../mume/mume.org.zip">MUME.ORG Wiki.zip</a></li>
+    <li><a href="../mume/tabris23.tripod.com.zip">Tripod's Mume Website.zip</a></li>
+    <li><a href="../mume/mume.yllemo.com.zip">Yllemo's Mume Website.zip</a></li>
+</ul>
 #end()
