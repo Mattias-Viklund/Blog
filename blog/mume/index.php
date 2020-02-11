@@ -57,8 +57,8 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
 <h5>Archived Websites.</h5>
 <p>Clicking the Archived Links will bring you to my own copy of these. Last updated February 11th 2020.</p>
 <ul>
-    <li><a href="./mume.org/wiki/index.php/Newbie.html">MUME.ORG Wiki </a><a href="mume.org/wiki">(Live Version)</a></li>
-    <li><a href="./tabris23.tripod.com/index.html">Tripod's Mume Website </a><a href="tabris23.tripod.com/">(Live Version)</a></li>
+    <li><a href="./mume.org/wiki/index.php/Newbie.html">MUME.ORG Wiki </a><a href="https://mume.org/wiki">(Live Version)</a></li>
+    <li><a href="./tabris23.tripod.com/index.html">Tripod's Mume Website </a><a href="http://tabris23.tripod.com/">(Live Version)</a></li>
     <li><a href="./mume.yllemo.com/doku.php.html">Yllemo's Mume Website </a><a href="http://mume.yllemo.com/doku.php?id=what_is_mume">(Live Version)</a></li>
     <p>^This resource needs you to be logged in to read a lot. Unfortunate, but nothing I could do about it. Visit live page for all that info.</p>
     <br>
