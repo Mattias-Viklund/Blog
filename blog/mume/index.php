@@ -40,6 +40,9 @@ Because it really deserves it.</p>
 
 #start("Main")
 <div class="main">
+<h3 class="m-shade">The MUME Archival Project</h3>
+<p>Capturing the essence of greatness.</p>
+<hr>
 <p>So starting off, for new players it's probably very important to get a mapper.</p>
 <p>It will make your life so much easier, and if you're on the lookout for one,
 I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made and maintained by <a href="https://mume.schimmelmann.us/">Jahara</a>(hopefully that link will never die) himself.</p>
@@ -54,6 +57,7 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
     <li><a href="./forum_guides/guide_troll.php">Troll Guide</a> (By <a href="https://mume.org/forum/memberlist.php?mode=viewprofile&u=151">Ortansia</a>)</li>    
     <li><a href="./forum_guides/guide_zaug.php">Zaugurz Guide</a> (By <a href="https://mumeresource.wordpress.com/guides/zaugurz/">Mumeresource</a>)</li>    
     <li><a href="./jpetazzo/index.php">Misc Guides</a> (By <a href="https://github.com/jpetazzo">jpetazzo</a>)</li>
+    <li><a href="guide.php">Beginner Guide [Very Unfinished and Unprofessional]</a> (By Me)</li>
 </ul>
 <hr>
 <h5>Stats, Strats and Misc.</h5>
