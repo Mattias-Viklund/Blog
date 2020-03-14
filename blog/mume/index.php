@@ -81,14 +81,14 @@ I'll recommend you <a href="https://github.com/MUME/MMapper">MMapper</a>, made a
     <li><a href="./mume.yllemo.com/doku.php.html">Yllemo's Mume Website </a>-<a href="http://mume.yllemo.com/doku.php?id=what_is_mume" class="live"> (Live Version)</a></li>
     <p>^This resource needs you to be logged in to read a lot. Unfortunate, but nothing I could do about it. Visit live page for all that info.</p>
     <br>
-    <p>Thank you all amazing people for these resources.</p>
-    <p>Mail me <a href="mailto:devmew@exedump.com">devmew@exedump.com</a> if you want to add something, I stare at this email all day every day.</p>
 </ul>
 <hr>
 <h5>Some really good online resources.</h5>
 <ul>
     <li><a href="http://elvenrunes.com">Elvenrunes (Main hub for MUME)</a></li>
 </ul>
-
+<hr>
+<h5>Thank you all amazing people for these resources.</h5>
+    <p>Mail me <a href="mailto:devmew@exedump.com">devmew@exedump.com</a> if you want to add something, I stare at this email all day every day.</p>
 </div>
 #end()
